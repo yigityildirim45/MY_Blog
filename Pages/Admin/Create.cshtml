@@ -1,0 +1,16 @@
+﻿@page
+@model MY_Blog.Pages.Admin.CreateModel
+
+<h2>Yeni Blog Yazısı Oluştur</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="Title" class="form-label">Başlık</label>
+        <input type="text" id="Title" name="BlogPost.Title" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label for="Content" class="form-label">İçerik</label>
+        <textarea id="Content" name="BlogPost.Content" class="form-control" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

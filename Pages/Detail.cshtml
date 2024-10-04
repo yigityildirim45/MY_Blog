@@ -1,0 +1,8 @@
+﻿@page
+@model MY_Blog.Pages.DetailModel
+
+<h2>@Model.BlogPost.Title</h2>
+<p>@Model.BlogPost.Content</p>
+<p><strong>Tarih:</strong> @Model.BlogPost.CreatedAt.ToString("yyyy-MM-dd")</p>
+
+<a asp-page="/Index" class="btn btn-primary">Geri Dön</a>

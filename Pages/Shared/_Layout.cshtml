@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MY_Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MY_Blog</h1>
+            <nav>
+                <a asp-page="/Index" class="btn btn-link">Ana Sayfa</a>
+                <a asp-page="/Admin/Create" class="btn btn-link">Yeni Yazı Ekle</a>
+            </nav>
+        </header>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 MY_Blog</p>
+    </footer>
+</body>
+</html>
